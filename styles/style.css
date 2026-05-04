@@ -10,7 +10,6 @@ body{
 header{
     position: sticky;
     top: 0;
-   background-color: rgba(225, 130, 165, 0.72);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -20,8 +19,7 @@ header{
 /* 1200 - ... */
 nav{
     padding: 21px 7px 7px 21px ;
-    /* background-color: rgba(255, 255, 255, 0.72); */
-    background-color: rgba(215, 225, 130, 0.72);
+    background-color: rgba(255, 255, 255, 0.72);
     display: flex;
     justify-content:space-between;
     align-items: center;

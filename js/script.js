@@ -1,5 +1,5 @@
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const hamburgerMenu = document.querySelector('.hamburger-menu');
+const hamburgerIcon = document.querySelector('.hamber-menu');
+const hamburgerMenu = document.querySelector('.hamber-menu-panel');
 const crossIcon = document.querySelector('.cross-icon');
 const showMoreMenu = document.querySelector('#show-more-menu');
 const showProductMenu = document.querySelector('#show-product-menu');

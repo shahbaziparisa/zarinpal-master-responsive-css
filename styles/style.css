@@ -15,7 +15,7 @@ header{
 }
 /* 1200 - ... */
 nav{
-    padding: 21px 0px 7px ;
+    padding: 21px 0px 7px 21px ;
     /* background-color: rgba(255, 255, 255, 0.72); */
     background-color: rgba(215, 225, 130, 0.72);
     display: flex;
@@ -26,6 +26,7 @@ nav{
     margin: auto;
     position: sticky;
     top: 0;
+    margin-left: 10px;
     backdrop-filter: blur(20px);
     transition: all 0.3s ease;
 
@@ -101,6 +102,37 @@ nav{
 
   
 }
+.top-hamber{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.hamber-menu-panel{
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 20px;
+    transform: translateY(-100%);
+    
+}
+.hamber-menu-panel ul{
+    list-style: none;
+
+}
+.hamber-menu-panel a{
+   text-decoration: none;
+   display: inline-block;
+   padding: 10px;
+   color: #000000;
+   font-family: "iranyekanwebmedium";
+   font-size: 1rem;
+}
+.close-icon{
+    width: 20px;
+}
  /* 767px- 990 */
 @media (max-width :990px){
     nav{
@@ -136,4 +168,18 @@ nav{
         width: 940px;
     }
    
+}
+
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.show-hamburger-menu{
+    animation:fadeInDown 0.35s forwards;
 }

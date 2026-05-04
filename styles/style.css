@@ -10,10 +10,14 @@ body{
 header{
     position: sticky;
     top: 0;
+    
+
 }
+/* 1200 - ... */
 nav{
     padding: 21px 0px 7px ;
-    background-color: rgba(255, 255, 255, 0.72);
+    /* background-color: rgba(255, 255, 255, 0.72); */
+    background-color: rgba(215, 225, 130, 0.72);
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -27,18 +31,26 @@ nav{
 
 
 }
+/* 990-1200 */
+@media (max-width :1200px){
+    nav{
+        width: 940px;
+    }
+
+}
+
 .nav-links{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    align-items: center;
     list-style: none;
-    gap:20px;
+    gap:10px;
   
 }
 .nav-links a{
     text-decoration: none;
     color: #515154;
-    margin: 10px;
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
@@ -55,12 +67,13 @@ nav{
     color: #000000;
 }
 .register-btn{
-    font-family:'YekanBakhHeavy','Courier New', Courier, monospace;
+    font-family:'YekanBakhMedium','Courier New', Courier, monospace;
     color:#ffffff ;
     background-color: #0a33ff;
     padding: 10px;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
     
 }
 .register-btn:hover{
@@ -73,9 +86,7 @@ nav{
 .more-menu img{
     width: 8px;
     margin-right: 5px;
-
-    
-}
+    }
 .logo{
    
 }
@@ -92,4 +103,29 @@ nav{
     padding: 15px;
 
   
+}
+ /* 767px- 990 */
+@media (max-width :990px){
+    nav{
+        width: auto;
+    }
+    .register-btn{
+        display: none;
+    }
+    .nav-links li{
+     margin: 0;
+    }
+
+}
+ /* 0- 767px */
+@media (max-width :767px){
+  .nav-links{
+     display: none;
+    }
+     nav{
+        width: auto;
+        padding: 10px 8px;
+
+    }
+
 }

@@ -10,12 +10,16 @@ body{
 header{
     position: sticky;
     top: 0;
-    
+   background-color: rgba(225, 130, 165, 0.72);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
 
 }
 /* 1200 - ... */
 nav{
-    padding: 21px 0px 7px 21px ;
+    padding: 21px 7px 7px 21px ;
     /* background-color: rgba(255, 255, 255, 0.72); */
     background-color: rgba(215, 225, 130, 0.72);
     display: flex;
@@ -23,12 +27,13 @@ nav{
     align-items: center;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     width: 1170px;
-    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
     position: sticky;
     top: 0;
-    margin-left: 10px;
     backdrop-filter: blur(20px);
     transition: all 0.3s ease;
+    z-index: 99;
 
 
 }
@@ -38,12 +43,14 @@ nav{
     display: none;
 }
 .nav-links{
+ 
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
     list-style: none;
     gap:10px;
+    margin:0 20px 0 20px
   
 }
 .nav-links a{
@@ -79,14 +86,15 @@ nav{
 }
 .more-menu{
     display: flex;
-
 }
 .more-menu img{
     width: 8px;
     margin-right: 5px;
     }
 .logo{
-   
+     width: 100px;
+     display: inline-block;
+     
 }
 .hero{
     background-color: #191B30;
@@ -112,6 +120,7 @@ nav{
     background-color: #FFFFFF;
     top: 0;
     right: 0;
+    left: 0;
     z-index: 100;
     width: 100%;
     padding: 20px;

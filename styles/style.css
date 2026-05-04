@@ -37,6 +37,12 @@ nav{
 
 
 }
+.left-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
 
 .hamber-menu{
     width: 27px;
@@ -167,6 +173,9 @@ nav{
 
     }
      .hamber-menu{
+        display: block;
+    }
+     .register-btn{
         display: block;
     }
 }

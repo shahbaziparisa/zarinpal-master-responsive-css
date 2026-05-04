@@ -31,14 +31,11 @@ nav{
 
 
 }
-/* 990-1200 */
-@media (max-width :1200px){
-    nav{
-        width: 940px;
-    }
 
+.hamber-menu{
+    width: 27px;
+    display: none;
 }
-
 .nav-links{
     display: flex;
     flex-direction: row;
@@ -115,6 +112,7 @@ nav{
     .nav-links li{
      margin: 0;
     }
+   
 
 }
  /* 0- 767px */
@@ -127,5 +125,15 @@ nav{
         padding: 10px 8px;
 
     }
+     .hamber-menu{
+        display: block;
+    }
+}
 
+/* 990-1200 */
+@media (max-width :1200px){
+    nav{
+        width: 940px;
+    }
+   
 }

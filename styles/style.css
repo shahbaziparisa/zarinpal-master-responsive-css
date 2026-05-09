@@ -27,8 +27,7 @@ nav{
     width: 1170px;
     margin-left: 10px;
     margin-right: 10px;
-    position: sticky;
-    top: 0;
+    
     backdrop-filter: blur(20px);
     transition: all 0.3s ease;
     z-index: 99;
@@ -208,12 +207,13 @@ nav{
 }
 
 .show-hamburger-menu{
-    animaton:fadeInDown 0.35s forwards;
+    animation:fadeInDown 0.35s forwards;
 }
 
 .services-menu{
-    top: 0;
-     left: -90px;
+    top: 100%;      /* دقیقاً زیر المنت والد */
+    left: 0;
+    transform: translateX(-50%);  /* وسط‌چین نسبت به والد */
      width: 240px;
     position: absolute;
     display: none;
@@ -222,7 +222,6 @@ nav{
     background-color: #ffffff;
     border-radius: 20px;
     padding: 10px;
-    margin-top: 65px;
 }
 .services-menu a {
   margin: 10px;

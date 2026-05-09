@@ -14,14 +14,15 @@ crossIcon.addEventListener('click', function () {
 
 
 showServiceMenu.addEventListener('mouseenter', function (e) {
-  console.log('e target hover',e.target.childNodes)
-  const div = e.target.childNodes[5];
+  
+  const div = e.target.querySelector('.services-menu');
   console.log('div',div)
   div.style.animation = 'showUp 0.35s 1';
   div.style.display = 'flex';
 });
 
 showServiceMenu.addEventListener('mouseleave', function (e) {
-  const div = e.target.childNodes[5];
+  // const div = e.target.childNodes[5];
+    const div = e.target.querySelector('.services-menu');
   div.style.display = 'none';
 });

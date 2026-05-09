@@ -72,7 +72,7 @@ nav{
 
 }
 .nav-links li:hover{
-    background-color: #F9F9FB;
+    background-color: #cacacf;
     color: #000000;
 }
 .register-btn{
@@ -197,5 +197,40 @@ nav{
     }
 }
 .show-hamburger-menu{
-    animation:fadeInDown 0.35s forwards;
+    animaton:fadeInDown 0.35s forwards;
+}
+
+.services-menu{
+    top: 0;
+     left: -90px;
+     width: 240px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 80px;
+}
+.services-menu a:hover{
+background-color: #c9c9c9;
+}
+.service-title{
+    font-family:'iranyekanwebmedium','Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #000000;
+
+}
+.service-subtitle{
+    font-family:'iranyekanwebmedium','Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 0.7rem;
+    color: #a4a3a3;
+    margin-top: 10px;
+}
+#show-services-menu{
+    position: relative;
+
 }

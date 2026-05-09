@@ -26,8 +26,8 @@ nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
-  
-    width: 1200px;
+     width: min(95%, 1200px);
+    /* width: 1200px; */
     margin-left: 5px;
     margin-right: 5px;
     transition: all 0.3s ease;
@@ -105,14 +105,20 @@ nav{
 .hero{
     
     background-image: linear-gradient(135deg,#181E42, #191A26);
-    height: 600px;
-    border-radius: 20px;
-    margin: 30px;
+    /* height: 600px; */
+    min-height: 550px;
+    height: auto;
+    /* border-radius: 20px; */
+    /* margin: 30px; */
+     border-radius: clamp(16px, 4vw, 20px);
+    margin: clamp(15px, 4vw, 30px);
+    padding: clamp(30px, 6vw, 70px);
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
     align-items: center;
-    padding: 70px;
+    /* padding: 70px; */
+    gap: clamp(20px, 5vw, 50px);
 
   
 }
@@ -135,20 +141,35 @@ nav{
     top:-65px;
     width: 15px;
 }
+/* ستون متن */
+.pretitle-hero {
+    flex: 1;  /* یعنی باقیمانده فضا را بگیر */
+}
 .title-hero{
     color: #ffffff;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
 }
 .par-heo{
  
     margin: 25px 0;
     color: #aeaeb0;
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: clamp(0.875rem, 3vw, 1.125rem);
     font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
 }
+/* ستون عکس */
+.banner-img {
+    flex: 1;  /* یعنی باقیمانده فضا را بگیر */
+    display: flex;
+    justify-content: center;
+}
 .banner-img img{
-    width: 500px;
+    /* width: 500px; */
+    width: min(100%, 500px);
+    max-width: 500px;
+    height: auto;
 }
 .top-hamber{
     display: flex;

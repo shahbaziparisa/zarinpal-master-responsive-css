@@ -1,8 +1,7 @@
 const hamburgerIcon = document.querySelector('.hamber-menu');
 const hamburgerMenu = document.querySelector('.hamber-menu-panel');
-const crossIcon = document.querySelector('.cross-icon');
-const showMoreMenu = document.querySelector('#show-more-menu');
-const showProductMenu = document.querySelector('#show-product-menu');
+const crossIcon = document.querySelector('.close-icon');
+const showServiceMenu = document.querySelector('#show-services-menu');
 
 hamburgerIcon.addEventListener('click', function () {
   console.log(hamburgerMenu.style.transform);
@@ -13,24 +12,16 @@ crossIcon.addEventListener('click', function () {
   hamburgerMenu.classList.remove('show-hamburger-menu');
 });
 
-showMoreMenu.addEventListener('mouseenter', function (e) {
-  const ul = e.target.childNodes[5];
-  ul.style.animation = 'showUp 0.35s 1';
-  ul.style.display = 'block';
-});
 
-showMoreMenu.addEventListener('mouseleave', function (e) {
-  const ul = e.target.childNodes[5];
-  ul.style.display = 'none';
-});
-
-showProductMenu.addEventListener('mouseenter', function (e) {
+showServiceMenu.addEventListener('mouseenter', function (e) {
+  console.log('e target hover',e.target.childNodes)
   const div = e.target.childNodes[5];
+  console.log('div',div)
   div.style.animation = 'showUp 0.35s 1';
   div.style.display = 'flex';
 });
 
-showProductMenu.addEventListener('mouseleave', function (e) {
+showServiceMenu.addEventListener('mouseleave', function (e) {
   const div = e.target.childNodes[5];
   div.style.display = 'none';
 });

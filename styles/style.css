@@ -8,27 +8,28 @@ body{
     background-color: #F1F1F3;
 }
 header{
+    background-color: rgba(255, 255, 255, 0.6);
     position: sticky;
-    top: 0;
+   top: 0;
    display: flex;
    align-items: center;
    justify-content: center;
+   backdrop-filter: blur(20px);
+     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+
 
 
 }
 /* 1200 - ... */
 nav{
-    padding: 21px 7px 7px 21px ;
-    background-color: rgba(255, 255, 255, 0.72);
+    padding: 5px ;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-    width: 1170px;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-    backdrop-filter: blur(20px);
+  
+    width: 1200px;
+    margin-left: 5px;
+    margin-right: 5px;
     transition: all 0.3s ease;
     z-index: 99;
 
@@ -53,7 +54,7 @@ nav{
     align-items: center;
     list-style: none;
     gap:10px;
-    margin:0 20px 0 20px
+    
   
 }
 .nav-links a{
@@ -64,8 +65,8 @@ nav{
     cursor: pointer;
 }
 .nav-links li{
-     margin: 10px;
-    padding: 10px;
+    
+    padding: 1px;
     border-radius: 20px;
     cursor: pointer;
 
@@ -95,12 +96,13 @@ nav{
     margin-right: 5px;
     }
 .logo{
-     width: 100px;
+     height: 24px;
      display: inline-block;
      
 }
 .hero{
-    background-color: #191B30;
+    
+    background-image: linear-gradient(#181E42, #191A26);
     height: 500px;
     border-radius: 20px;
     margin: 40px;
@@ -109,7 +111,7 @@ nav{
     justify-content: center;
     color: #FFFFFF;
     align-items: center;
-    padding: 15px;
+    padding: 100px;
 
   
 }

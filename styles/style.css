@@ -5,7 +5,7 @@
 }
 body{
     font-family:'iranyekanwebmedium','Courier New', Courier, monospace;
-    background-color: #F1F1F3;
+    background-color: #ffffff;
 }
 header{
     background-color: rgba(255, 255, 255, 0.6);
@@ -80,6 +80,8 @@ nav{
     color:#ffffff ;
     background-color: #0a33ff;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -102,18 +104,51 @@ nav{
 }
 .hero{
     
-    background-image: linear-gradient(#181E42, #191A26);
-    height: 500px;
+    background-image: linear-gradient(135deg,#181E42, #191A26);
+    height: 600px;
     border-radius: 20px;
-    margin: 40px;
+    margin: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     color: #FFFFFF;
     align-items: center;
-    padding: 100px;
+    padding: 70px;
 
   
+}
+.go-down{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 58px;
+}
+.go-down div{
+    background-image: url('../images/arrowbottom.svg');
+    width: 120px;
+    height: 78px;
+}
+.go-down img{
+    position: relative;
+    top:-65px;
+    width: 15px;
+}
+.title-hero{
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
+}
+.par-heo{
+ 
+    margin: 25px 0;
+    color: #aeaeb0;
+    font-size: 1rem;
+    font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
+}
+.banner-img img{
+    width: 500px;
 }
 .top-hamber{
     display: flex;

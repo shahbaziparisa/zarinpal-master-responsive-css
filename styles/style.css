@@ -430,7 +430,7 @@ background-color: #f2f1f1;
 
 }
 .cards-section{
-    background-color: #f9fffb;
+    background-color: #ffffff;
     margin-top: -120px;
     padding: clamp(40px, 8vw, 80px);
 }
@@ -444,7 +444,7 @@ background-color: #f2f1f1;
 
 }
 .card{
-    background-color: #f4f5ff;
+    background-color: #F1F1F3;
     border-radius: 20px;
     padding: clamp(20px, 4vw, 30px);   
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -475,9 +475,4 @@ background-color: #f2f1f1;
     margin-bottom: 20px;
 }
 
-.card a {
-    text-decoration: none;
-    color: #0a33ff;
-    font-size: 14px;
-    font-weight: bold;
-}
+

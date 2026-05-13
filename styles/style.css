@@ -217,6 +217,13 @@ nav{
 .close-icon{
     width: 20px;
 }
+
+/* دسکتاپ بزرگ: ۴ کارت */
+@media (min-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 /* ============================================ */
 /* 1. موبایل (0 تا 767px) */
 /* ============================================ */
@@ -269,6 +276,10 @@ nav{
     .nav-links li {
         margin: 0;
     }
+    
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* ============================================ */
@@ -295,6 +306,9 @@ nav{
     
     .banner-img img {
         max-width: 380px;
+    }
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -342,7 +356,11 @@ nav{
         top: -32px;
         width: 12px;
     }
+   .cards-grid {
+        grid-template-columns: 1fr;
+    }
 }
+
 
 
 @keyframes fadeInDown{
@@ -410,4 +428,56 @@ background-color: #f2f1f1;
 #show-services-menu{
     position: relative;
 
+}
+.cards-section{
+    background-color: #f9fffb;
+    margin-top: -120px;
+    padding: clamp(40px, 8vw, 80px);
+}
+.cards-grid{
+     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr); */
+    gap: clamp(20px, 3vw, 30px);
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.card{
+    background-color: #f4f5ff;
+    border-radius: 20px;
+    padding: clamp(20px, 4vw, 30px);   
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    text-align: center;  /* یا right برای RTL */  
+    padding: clamp(20px, 8vw, 40px);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: clamp(50px, 10vw, 70px);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: clamp(18px, 3vw, 22px);
+    margin-bottom: 15px;
+    color: #191B30;
+}
+
+.card p {
+    font-size: clamp(13px, 2.5vw, 15px);
+    color: #6c757d;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #0a33ff;
+    font-size: 14px;
+    font-weight: bold;
 }

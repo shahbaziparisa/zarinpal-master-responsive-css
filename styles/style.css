@@ -510,7 +510,8 @@ nav {
     /* تغییر: به جای 100vw - 60px */
     max-width: calc(100vw - 60px);
     /* اضافه: حداکثر عرض */
-    height: calc(100vh - 80px);
+    height: auto;
+    max-height: calc(100vh - 60px);
     position: relative;
     justify-content: center;
     align-items: center;
@@ -654,6 +655,13 @@ nav {
     .cards-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .api-part {
+        height: auto;
+        max-height: calc(100vh - 60px);
+    }
+
+
 }
 
 /* ============================================ */
@@ -700,6 +708,7 @@ nav {
         max-width: calc(100vw - 20px);
         /* اضافه */
         height: auto;
+        max-height: calc(100vh - 60px);
         overflow: hidden;
         /* اضافه */
     }
@@ -806,6 +815,46 @@ nav {
 
     }
 
+    .api-part {
+        height: auto;
+        max-height: calc(100vh - 60px);
+    }
+
+    .api-row1 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .api-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .api-row2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 20px 0 0 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    .api-row2 ul li {
+        gap: 8px;
+        padding: 1rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .api-row2 ul li span {
+        color: #ffffff;
+        font-size: clamp(0.8rem, 3vw, 0.9rem);
+        font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
+        white-space: nowrap;
+        /* متن در یک خط بمونه */
+    }
+
 }
 
 
@@ -877,6 +926,47 @@ nav {
 
     }
 
+    .api-part {
+        height: auto;
+        max-height: calc(100vh - 60px);
+    }
+
+    .api-row1 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .api-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .api-row2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 20px 0 0 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    .api-row2 ul li {
+        gap: 8px;
+        padding: 1rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .api-row2 ul li span {
+        color: #ffffff;
+        font-size: clamp(0.8rem, 3vw, 0.9rem);
+        font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
+        white-space: nowrap;
+        /* متن در یک خط بمونه */
+    }
+
+
 }
 
 /* ============================================ */
@@ -885,6 +975,11 @@ nav {
 @media (min-width: 990px) and (max-width: 1200px) {
     nav {
         width: 940px;
+    }
+
+    .api-part {
+        height: auto;
+        max-height: calc(100vh - 60px);
     }
 }
 
@@ -954,8 +1049,8 @@ nav {
         width: auto;
         /* تغییر */
         max-width: calc(100vw - 20px);
-        /* اضافه */
         height: auto;
+        max-height: calc(100vh - 60px);
         overflow: hidden;
         /* اضافه */
     }

@@ -218,151 +218,6 @@ nav{
     width: 20px;
 }
 
-/* دسکتاپ بزرگ: ۴ کارت */
-@media (min-width: 1024px) {
-    .cards-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-/* ============================================ */
-/* 1. موبایل (0 تا 767px) */
-/* ============================================ */
-@media (max-width: 767px) {
-    .nav-links {
-        display: none;
-    }
-    
-    nav {
-        width: auto;
-        padding: 10px 8px;
-    }
-    
-    .hamber-menu {
-        display: block;
-    }
-    
-    .register-btn {
-        display: block;
-    }
-    
-    /* گو-دان */
-    .go-down {
-        bottom: 20px;
-    }
-    
-    .go-down div {
-        width: 80px;
-        height: 52px;
-    }
-    
-    .go-down img {
-        top: -42px;
-        width: 10px;
-    }
-}
-
-/* ============================================ */
-/* 2. تبلت و دسکتاپ کوچک (770px تا 990px) */
-/* ============================================ */
-@media (min-width: 770px) and (max-width: 990px) {
-    nav {
-        width: auto;
-    }
-    
-    .register-btn {
-        display: none;
-    }
-    
-    .nav-links li {
-        margin: 0;
-    }
-    
-    .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* ============================================ */
-/* 3. تبلت بزرگ (770px تا 1124px) - عکس زیر متن */
-/* ============================================ */
-@media (min-width: 770px) and (max-width: 1124px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-        padding: clamp(90px, 6vw, 120px);
-    }
-    
-    .pretitle-hero {
-        order: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .banner-img {
-        order: 2;
-    }
-    
-    .banner-img img {
-        max-width: 380px;
-    }
-    .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* ============================================ */
-/* 4. دسکتاپ متوسط (990px تا 1200px) */
-/* ============================================ */
-@media (min-width: 990px) and (max-width: 1200px) {
-    nav {
-        width: 940px;
-    }
-}
-
-/* ============================================ */
-/* 5. موبایل و تبلت باریک (زیر 770px) - عکس زیر متن */
-/* ============================================ */
-@media (max-width: 769px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-    
-    .pretitle-hero {
-        order: 1;
-    }
-    
-    .banner-img {
-        order: 2;
-    }
-    
-    .banner-img img {
-        max-width: 280px;
-    }
-    
-    .go-down {
-        bottom: 32px;
-    }
-    
-    .go-down div {
-        width: 80px;
-        height: 42px;
-    }
-    
-    .go-down img {
-        top: -32px;
-        width: 12px;
-    }
-   .cards-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
 @keyframes fadeInDown{
     0%{
         opacity: 0;
@@ -527,14 +382,21 @@ background-color: #f2f1f1;
 .payment-image img{
     width: 100%
 }
+
 .payment-row2 ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4rem;
     justify-content: space-evenly;
+    gap: 4rem;
     margin-bottom: 20px;
     margin-top: -30px;
+}
+.payment-row2 ul li span{
+     color: #000000;
+    font-size: clamp(0.8rem, 4vw, 1rem);
+    font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
+
 }
 .payment-buttons{
     margin-top: 20px;
@@ -579,6 +441,241 @@ background-color: #f2f1f1;
     background-color:#e1dfdf ;
 
 }
+
+
+/* دسکتاپ بزرگ: ۴ کارت */
+@media (min-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* ============================================ */
+/* 1. موبایل (0 تا 767px) */
+/* ============================================ */
+@media (max-width: 767px) {
+    .nav-links {
+        display: none;
+    }
+    
+    nav {
+        width: auto;
+        padding: 10px 8px;
+    }
+    
+    .hamber-menu {
+        display: block;
+    }
+    
+    .register-btn {
+        display: block;
+    }
+    
+    /* گو-دان */
+    .go-down {
+        bottom: 20px;
+    }
+    
+    .go-down div {
+        width: 80px;
+        height: 52px;
+    }
+    
+    .go-down img {
+        top: -42px;
+        width: 10px;
+    }
+  
+}
+
+/* ============================================ */
+/* 2. تبلت و دسکتاپ کوچک (770px تا 990px) */
+/* ============================================ */
+@media (min-width: 770px) and (max-width: 990px) {
+    nav {
+        width: auto;
+    }
+    
+    .register-btn {
+        display: none;
+    }
+    
+    .nav-links li {
+        margin: 0;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .payment-row1{
+        flex-direction: column;
+    }
+
+    .payment-info{
+   align-items: center;
+   }
+.payment-buttons{
+  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.payment-row2 ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0 20px;
+    padding: 0;
+    width: 100%;
+     gap: 16px;
+      justify-items: center;
+}
+  .payment-row2 ul li {
+        text-align: center;     
+        width: 100%;        
+                list-style: none;
+  
+    }
+.payment-row2 ul li span{
+    text-align: center;
+  
+}
+
+}
+
+
+/* ============================================ */
+/* 3. تبلت بزرگ (770px تا 1124px) - عکس زیر متن */
+/* ============================================ */
+@media (min-width: 770px) and (max-width: 1124px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: clamp(90px, 6vw, 120px);
+    }
+    
+    .pretitle-hero {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner-img {
+        order: 2;
+    }
+    
+    .banner-img img {
+        max-width: 380px;
+    }
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+        .payment-row1{
+        flex-direction: column;
+    }
+
+    .payment-info{
+   align-items: center;
+   }
+.payment-buttons{
+  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.payment-row2 ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0 20px;
+    padding: 0;
+    width: 100%;
+     gap: 16px;
+      justify-items: center;
+}
+  .payment-row2 ul li {
+        text-align: center;     
+        width: 100%;  
+       list-style: none;
+        
+    }
+.payment-row2 ul li span{
+    text-align: center;
+  
+}
+   
+}
+
+/* ============================================ */
+/* 4. دسکتاپ متوسط (990px تا 1200px) */
+/* ============================================ */
+@media (min-width: 990px) and (max-width: 1200px) {
+    nav {
+        width: 940px;
+    }
+}
+
+/* ============================================ */
+/* 5. موبایل و تبلت باریک (زیر 770px) - عکس زیر متن */
+/* ============================================ */
+@media (max-width: 769px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .pretitle-hero {
+        order: 1;
+    }
+    
+    .banner-img {
+        order: 2;
+    }
+    
+    .banner-img img {
+        max-width: 280px;
+    }
+    
+    .go-down {
+        bottom: 32px;
+    }
+    
+    .go-down div {
+        width: 80px;
+        height: 42px;
+    }
+    
+    .go-down img {
+        top: -32px;
+        width: 12px;
+    }
+   .cards-grid {
+        grid-template-columns: 1fr;
+    }
+  
+    .payment-row1{
+   
+    flex-direction: column;
+    }
+    .payment-info{
+   align-items: center;
+}
+.payment-buttons{
+  
+    flex-direction: column;
+   
+
+}
+.payment-row2{
+    display: none;
+}
+
+
+}
+
+
 
 
 

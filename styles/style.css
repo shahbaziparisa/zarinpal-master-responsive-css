@@ -1,32 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:'iranyekanwebmedium','Courier New', Courier, monospace;
+
+body {
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
     background-color: #ffffff;
 }
-header{
+
+header {
     background-color: rgba(255, 255, 255, 0.6);
     position: sticky;
-   top: 0;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   backdrop-filter: blur(20px);
-     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 
 
 
 }
+
 /* 1200 - ... */
-nav{
-    padding: 5px ;
+nav {
+    padding: 5px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-     width: min(95%, 1200px);
+    width: min(95%, 1200px);
     /* width: 1200px; */
     margin-left: 5px;
     margin-right: 5px;
@@ -35,49 +38,55 @@ nav{
 
 
 }
-.left-part{
+
+.left-part {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
 
-.hamber-menu{
+.hamber-menu {
     width: 27px;
     display: none;
 }
-.nav-links{
- 
+
+.nav-links {
+
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
-    gap:10px;
-    
-  
+    gap: 10px;
+
+
 }
-.nav-links a{
+
+.nav-links a {
     text-decoration: none;
     color: #515154;
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
 }
-.nav-links li{
-    
+
+.nav-links li {
+
     padding: 1px;
     border-radius: 20px;
     cursor: pointer;
 
 }
-.nav-links li:hover{
+
+.nav-links li:hover {
     background-color: #cacacf;
     color: #000000;
 }
-.register-btn{
-    font-family:'YekanBakhMedium','Courier New', Courier, monospace;
-    color:#ffffff ;
+
+.register-btn {
+    font-family: 'YekanBakhMedium', 'Courier New', Courier, monospace;
+    color: #ffffff;
     background-color: #0a33ff;
     padding: 10px;
     padding-left: 20px;
@@ -85,14 +94,16 @@ nav{
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    
+
 }
-.register-btn:hover{
-    background-color:#0322C7 ;
+
+.register-btn:hover {
+    background-color: #0322C7;
 }
-.register-btn2{
-    font-family:'YekanBakhMedium','Courier New', Courier, monospace;
-    color:#ffffff ;
+
+.register-btn2 {
+    font-family: 'YekanBakhMedium', 'Courier New', Courier, monospace;
+    color: #ffffff;
     background-color: #0a33ff;
     padding: 10px;
     padding-left: 20px;
@@ -100,32 +111,37 @@ nav{
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    
+
 }
-.register-btn2:hover{
-    background-color:#0322C7 ;
+
+.register-btn2:hover {
+    background-color: #0322C7;
 }
-.more-menu{
+
+.more-menu {
     display: flex;
 }
-.more-menu img{
+
+.more-menu img {
     width: 8px;
     margin-right: 5px;
-    }
-.logo{
-     height: 24px;
-     display: inline-block;
-     
 }
-.hero{
-    
-    background-image: linear-gradient(135deg,#181E42, #191A26);
+
+.logo {
+    height: 24px;
+    display: inline-block;
+
+}
+
+.hero {
+
+    background-image: linear-gradient(135deg, #181E42, #191A26);
     /* height: 600px; */
     min-height: 550px;
     height: auto;
     /* border-radius: 20px; */
     /* margin: 30px; */
-     border-radius: clamp(16px, 4vw, 20px);
+    border-radius: clamp(16px, 4vw, 20px);
     margin: clamp(15px, 4vw, 30px);
     padding: clamp(30px, 6vw, 70px);
     display: flex;
@@ -135,9 +151,10 @@ nav{
     /* padding: 70px; */
     gap: clamp(20px, 5vw, 50px);
 
-  
+
 }
-.go-down{
+
+.go-down {
     position: relative;
     width: 100%;
     display: flex;
@@ -146,51 +163,62 @@ nav{
     align-items: center;
     bottom: 58px;
 }
-.go-down div{
+
+.go-down div {
     background-image: url('../images/arrowbottom.svg');
     width: 120px;
     height: 78px;
 }
-.go-down img{
+
+.go-down img {
     position: relative;
-    top:-65px;
+    top: -65px;
     width: 15px;
-} 
+}
+
 /* ستون متن */
 .pretitle-hero {
-    flex: 1;  /* یعنی باقیمانده فضا را بگیر */
+    flex: 1;
+    /* یعنی باقیمانده فضا را بگیر */
 }
-.title-hero{
+
+.title-hero {
     color: #ffffff;
     /* font-size: 2rem; */
     font-size: clamp(1.5rem, 5vw, 2.5rem);
-    font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
 }
-.par-heo{
-     margin: 25px 0;
+
+.par-heo {
+    margin: 25px 0;
     color: #aeaeb0;
     /* font-size: 1rem; */
     font-size: clamp(0.875rem, 3vw, 1.125rem);
-    font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
 }
+
 /* ستون عکس */
 .banner-img {
-    flex: 1;  /* یعنی باقیمانده فضا را بگیر */
+    flex: 1;
+    /* یعنی باقیمانده فضا را بگیر */
     display: flex;
     justify-content: center;
 }
-.banner-img img{
+
+.banner-img img {
     /* width: 500px; */
     width: min(100%, 500px);
     max-width: 500px;
     height: auto;
 }
-.top-hamber{
+
+.top-hamber {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.hamber-menu-panel{
+
+.hamber-menu-panel {
     position: fixed;
     background-color: #FFFFFF;
     top: 0;
@@ -200,30 +228,34 @@ nav{
     width: 100%;
     padding: 20px;
     transform: translateY(-100%);
-    
+
 }
-.hamber-menu-panel ul{
+
+.hamber-menu-panel ul {
     list-style: none;
 
 }
-.hamber-menu-panel a{
-   text-decoration: none;
-   display: inline-block;
-   padding: 10px;
-   color: #000000;
-   font-family: "iranyekanwebmedium";
-   font-size: 1rem;
+
+.hamber-menu-panel a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: #000000;
+    font-family: "iranyekanwebmedium";
+    font-size: 1rem;
 }
-.close-icon{
+
+.close-icon {
     width: 20px;
 }
 
-@keyframes fadeInDown{
-    0%{
+@keyframes fadeInDown {
+    0% {
         opacity: 0;
         transform: translateY(-100%);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -231,23 +263,26 @@ nav{
 
 
 @keyframes showUp {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.show-hamburger-menu{
-    animation:fadeInDown 0.35s forwards;
+.show-hamburger-menu {
+    animation: fadeInDown 0.35s forwards;
 }
 
-.services-menu{
-    top: 100%;      /* دقیقاً زیر المنت والد */
+.services-menu {
+    top: 100%;
+    /* دقیقاً زیر المنت والد */
     left: 0;
-    transform: translateX(-50%);  /* وسط‌چین نسبت به والد */
-     width: 240px;
+    transform: translateX(-50%);
+    /* وسط‌چین نسبت به والد */
+    width: 240px;
     position: absolute;
     display: none;
     flex-direction: column;
@@ -256,41 +291,47 @@ nav{
     border-radius: 20px;
     padding: 10px;
 }
+
 .services-menu a {
-  margin: 10px;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.services-menu a:hover{
-background-color: #f2f1f1;
+.services-menu a:hover {
+    background-color: #f2f1f1;
 }
-.service-title{
-    font-family:'iranyekanwebmedium','Courier New', Courier, monospace;
+
+.service-title {
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
     font-weight: 800;
     font-size: 0.9rem;
     color: #000000;
 
 }
-.service-subtitle{
-    font-family:'iranyekanwebmedium','Courier New', Courier, monospace;
+
+.service-subtitle {
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
     font-weight: 100;
     font-size: 0.7rem;
     color: #a4a3a3;
     margin-top: 10px;
 }
-#show-services-menu{
+
+#show-services-menu {
     position: relative;
 
 }
-.cards-section{
+
+.cards-section {
     background-color: #ffffff;
     margin-top: -120px;
     padding: clamp(40px, 8vw, 80px);
 }
-.cards-grid{
-     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+
+.cards-grid {
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     display: grid;
     /* grid-template-columns: repeat(4,1fr); */
     gap: clamp(20px, 3vw, 30px);
@@ -298,18 +339,21 @@ background-color: #f2f1f1;
     margin: 0 auto;
 
 }
-.card{
+
+.card {
     background-color: #F9F9FB;
     border-radius: 20px;
-    padding: clamp(20px, 4vw, 30px);   
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: clamp(20px, 4vw, 30px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    text-align: center;  /* یا right برای RTL */  
+    text-align: center;
+    /* یا right برای RTL */
     padding: clamp(20px, 8vw, 40px);
 }
+
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -329,61 +373,70 @@ background-color: #f2f1f1;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-.payment-part{
+
+.payment-part {
     background-color: #F9F9FB;
     border-radius: clamp(16px, 4vw, 20px);
     margin: clamp(15px, 4vw, 30px);
     padding: clamp(20px, 4vw, 40px);
 }
-.payment-box{
+
+.payment-box {
     background-color: #ffffff;
     border-radius: clamp(16px, 4vw, 20px);
-    padding: clamp(10px, 1vw, 20px); 
-    
+    padding: clamp(10px, 1vw, 20px);
+
 }
-.payment-row1{
+
+.payment-row1 {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.payment-image{
-    flex:1;
-    padding: clamp(20px, 3vw, 35px); 
+
+.payment-image {
+    flex: 1;
+    padding: clamp(20px, 3vw, 35px);
 }
-.payment-info{
+
+.payment-info {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: clamp(20px, 2vw, 25px); 
+    padding: clamp(20px, 2vw, 25px);
     gap: 1rem;
-   justify-content: center; 
-   align-items: start;
+    justify-content: center;
+    align-items: start;
 
 }
-.payment-info h3{
+
+.payment-info h3 {
     color: #000000;
     font-size: clamp(1rem, 4vw, 1.8rem);
-    font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
 }
-.payment-description{
-  text-decoration: none;
+
+.payment-description {
+    text-decoration: none;
     color: #747475;
-     font-size: clamp(0.5rem, 4vw, 1rem);
-     text-align: justify;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+    text-align: justify;
 }
-.payment-subtitle{
-     text-decoration: none;
+
+.payment-subtitle {
+    text-decoration: none;
     color: #515154;
     padding: 10px;
-    
+
 }
-.payment-image img{
+
+.payment-image img {
     width: 100%
 }
 
-.payment-row2 ul{
+.payment-row2 ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -392,23 +445,26 @@ background-color: #f2f1f1;
     margin-bottom: 20px;
     margin-top: -30px;
 }
-.payment-row2 ul li span{
-     color: #000000;
+
+.payment-row2 ul li span {
+    color: #000000;
     font-size: clamp(0.8rem, 4vw, 1rem);
-    font-family: 'iranyekanwebmedium','Courier New', Courier, monospace;
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
 
 }
-.payment-buttons{
+
+.payment-buttons {
     margin-top: 20px;
     display: flex;
     gap: 10px;
-     align-items: center;
-    justify-content:right;
+    align-items: center;
+    justify-content: right;
 
 }
-.primary-btn{
-    font-family:'YekanBakhMedium','Courier New', Courier, monospace;
-    color:#ffffff ;
+
+.primary-btn {
+    font-family: 'YekanBakhMedium', 'Courier New', Courier, monospace;
+    color: #ffffff;
     background-color: #0a33ff;
     padding: 10px;
     padding-left: 20px;
@@ -416,29 +472,31 @@ background-color: #f2f1f1;
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    
+
 }
-.primary-btn:hover{
-    background-color:#0322C7 ;
+
+.primary-btn:hover {
+    background-color: #0322C7;
 }
-.secondary-btn{
-    font-family:'YekanBakhMedium','Courier New', Courier, monospace;
+
+.secondary-btn {
+    font-family: 'YekanBakhMedium', 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
     direction: rtl;
     gap: 8px;
     text-decoration: none;
-    background-color:#ffffff ;
+    background-color: #ffffff;
     color: #28457B;
-    border : 1px solid rgba(25,25,26,.1);
+    border: 1px solid rgba(25, 25, 26, .1);
     padding: 8px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 20px;
 }
 
-.secondary-btn:hover{
-    background-color:#e1dfdf ;
+.secondary-btn:hover {
+    background-color: #e1dfdf;
 
 }
 
@@ -449,6 +507,7 @@ background-color: #f2f1f1;
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 /* ============================================ */
 /* 1. موبایل (0 تا 767px) */
 /* ============================================ */
@@ -456,35 +515,35 @@ background-color: #f2f1f1;
     .nav-links {
         display: none;
     }
-    
+
     nav {
         width: auto;
         padding: 10px 8px;
     }
-    
+
     .hamber-menu {
         display: block;
     }
-    
+
     .register-btn {
         display: block;
     }
-    
+
     /* گو-دان */
     .go-down {
         bottom: 20px;
     }
-    
+
     .go-down div {
         width: 80px;
         height: 52px;
     }
-    
+
     .go-down img {
         top: -42px;
         width: 10px;
     }
-  
+
 }
 
 /* ============================================ */
@@ -494,51 +553,56 @@ background-color: #f2f1f1;
     nav {
         width: auto;
     }
-    
+
     .register-btn {
         display: none;
     }
-    
+
     .nav-links li {
         margin: 0;
     }
-    
+
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .payment-row1{
+
+    .payment-row1 {
         flex-direction: column;
     }
 
-    .payment-info{
-   align-items: center;
-   }
-.payment-buttons{
-  
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   
-}
-.payment-row2 ul{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 30px 0 20px;
-    padding: 0;
-    width: 100%;
-     gap: 16px;
-      justify-items: center;
-}
-  .payment-row2 ul li {
-        text-align: center;     
-        width: 100%;        
-                list-style: none;
-  
+    .payment-info {
+        align-items: center;
     }
-.payment-row2 ul li span{
-    text-align: center;
-  
-}
+
+    .payment-buttons {
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .payment-row2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 0 20px;
+        padding: 0;
+        width: 100%;
+        gap: 16px;
+        justify-items: center;
+    }
+
+    .payment-row2 ul li {
+        text-align: center;
+        width: 100%;
+        list-style: none;
+
+    }
+
+    .payment-row2 ul li span {
+        text-align: center;
+
+    }
 
 }
 
@@ -553,58 +617,64 @@ background-color: #f2f1f1;
         gap: 40px;
         padding: clamp(90px, 6vw, 120px);
     }
-    
+
     .pretitle-hero {
         order: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .banner-img {
         order: 2;
     }
-    
+
     .banner-img img {
         max-width: 380px;
     }
+
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-        .payment-row1{
+
+    .payment-row1 {
         flex-direction: column;
     }
 
-    .payment-info{
-   align-items: center;
-   }
-.payment-buttons{
-  
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   
-}
-.payment-row2 ul{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 30px 0 20px;
-    padding: 0;
-    width: 100%;
-     gap: 16px;
-      justify-items: center;
-}
-  .payment-row2 ul li {
-        text-align: center;     
-        width: 100%;  
-       list-style: none;
-        
+    .payment-info {
+        align-items: center;
     }
-.payment-row2 ul li span{
-    text-align: center;
-  
-}
-   
+
+    .payment-buttons {
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .payment-row2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 0 20px;
+        padding: 0;
+        width: 100%;
+        gap: 16px;
+        justify-items: center;
+    }
+
+    .payment-row2 ul li {
+        text-align: center;
+        width: 100%;
+        list-style: none;
+
+    }
+
+    .payment-row2 ul li span {
+        text-align: center;
+
+    }
+
 }
 
 /* ============================================ */
@@ -625,57 +695,56 @@ background-color: #f2f1f1;
         text-align: center;
         gap: 30px;
     }
-    
+
     .pretitle-hero {
         order: 1;
     }
-    
+
     .banner-img {
         order: 2;
     }
-    
+
     .banner-img img {
         max-width: 280px;
     }
-    
+
     .go-down {
         bottom: 32px;
     }
-    
+
     .go-down div {
         width: 80px;
         height: 42px;
     }
-    
+
     .go-down img {
         top: -32px;
         width: 12px;
     }
-   .cards-grid {
+
+    .cards-grid {
         grid-template-columns: 1fr;
     }
-  
-    .payment-row1{
-   
-    flex-direction: column;
+
+    .payment-row1 {
+
+        flex-direction: column;
     }
-    .payment-info{
-   align-items: center;
+
+    .payment-info {
+        align-items: center;
+    }
+
+    .payment-buttons {
+
+        flex-direction: column;
+
+
+    }
+
+    .payment-row2 {
+        display: none;
+    }
+
+
 }
-.payment-buttons{
-  
-    flex-direction: column;
-   
-
-}
-.payment-row2{
-    display: none;
-}
-
-
-}
-
-
-
-
-

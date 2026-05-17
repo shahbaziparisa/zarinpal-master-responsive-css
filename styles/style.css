@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     position: sticky;
     top: 0;
     display: flex;
@@ -18,7 +18,7 @@ header {
     justify-content: center;
     backdrop-filter: blur(20px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-
+    z-index: 99;
 
 
 }
@@ -505,12 +505,19 @@ nav {
     border-radius: clamp(16px, 4vw, 20px);
     margin: clamp(15px, 4vw, 30px);
     padding: clamp(20px, 4vw, 40px);
+    width: calc(100vw - 60px);
+    height: calc(100vh - 80px);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .api-box {
     background-color: #19191A;
     border-radius: clamp(16px, 4vw, 20px);
-    padding: 5rem 2.5rem;
+    padding: 1rem;
+    overflow: auto;
 }
 
 .api-row1 {
@@ -576,6 +583,11 @@ nav {
 
 }
 
+.api-btn:hover {
+    background-color: #d2d1d1;
+
+}
+
 .api-buttons {
     margin-top: 20px;
     display: flex;
@@ -608,6 +620,10 @@ nav {
     padding: 1.5rem;
     width: 100%;
 
+}
+
+.api-row2 ul li:hover {
+    background-color: #3f3f40;
 
 }
 

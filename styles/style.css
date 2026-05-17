@@ -500,6 +500,123 @@ nav {
 
 }
 
+.api-part {
+    background-color: #000000;
+    border-radius: clamp(16px, 4vw, 20px);
+    margin: clamp(15px, 4vw, 30px);
+    padding: clamp(20px, 4vw, 40px);
+}
+
+.api-box {
+    background-color: #19191A;
+    border-radius: clamp(16px, 4vw, 20px);
+    padding: 5rem 2.5rem;
+}
+
+.api-row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.api-image {
+    flex: 1;
+    padding: clamp(20px, 3vw, 35px);
+}
+
+.api-image img {
+    width: 100%
+}
+
+.api-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(20px, 2vw, 25px);
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.api-info h3 {
+    color: #ffffff;
+    font-size: clamp(1rem, 4vw, 1.8rem);
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
+}
+
+.api-description {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+    text-align: justify;
+}
+
+.api-subtitle {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+
+}
+
+.api-btn {
+    font-family: 'YekanBakhMedium', 'Courier New', Courier, monospace;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.api-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.api-row2 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    list-style: none;
+}
+
+.api-row2 ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #2c2c2d;
+    border-radius: 16px;
+    color: inherit;
+    cursor: pointer;
+    padding: 1.5rem;
+    width: 100%;
+
+
+}
+
+.api-row2 ul li span {
+    color: #ffffff;
+    font-size: clamp(0.8rem, 4vw, 1rem);
+    font-family: 'iranyekanwebmedium', 'Courier New', Courier, monospace;
+
+}
 
 /* دسکتاپ بزرگ: ۴ کارت */
 @media (min-width: 1024px) {
